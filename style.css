@@ -1,0 +1,71 @@
+* {
+    /* o asterisco é pra definir como padrao algumas configuracoes da página, porque cada navegador vem com um padrao */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    border-bottom: 2px solid #32b9cd;
+    height: 100px;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    list-style: none; /* tirar a estilização padrão da lista (°) */
+}
+.navbar li {
+    margin-right: 10px;
+}
+
+/* BANNER */
+.banner {
+    height: 300px;
+    background-image: url("imagens/bg-jelly-fish-para_outras_pags.png");
+    
+}
+.banner .container{ /*pro style da div filha sobrepor as da div pai, específico do filho desse pai*/
+    justify-content: center;
+}
+.banner .container p { /*outra forma de realizar seria colocando uma class no P*/
+    font-size: 36px;
+    width: 200px;
+    text-align: center;
+}
+/* SOCIAL */
+.social{
+    background-color: #e5e5e5;
+    height: auto;
+    padding: 40px 0;
+}
+.social .container .card{
+    width: 200px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /*align items não serve pra tags de texto*/
+    height: 350px;
+    justify-content: space-between;
+}
+.social .container .card img{ /*caminho completo só pra visualizar, pode por so .card etc*/
+    width: 150px;
+}
+.social .container .card h4{
+    font-size: 24px;
+}
