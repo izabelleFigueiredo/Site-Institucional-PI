@@ -12,7 +12,7 @@ body {
 }
 
 /* HEADER */
-.header {
+.header{
     width: 100%;
     border-bottom: 2px solid #32b9cd;
     height: 100px;
@@ -54,7 +54,7 @@ body {
     padding: 40px 0;
 }
 .social .container .card{
-    width: 200px;
+    width: 300px;
     color: #222;
     display: flex;
     flex-direction: column;
@@ -68,4 +68,22 @@ body {
 }
 .social .container .card h4{
     font-size: 24px;
+}
+
+/* FOOTER */
+.footer{
+    height: 200px;
+    border-top: 2px solid #32b9cd;
+}
+.empresa p{
+    flex-direction:column;
+    text-align: center;
+    font-size: 12px;
+}
+.empresa h2{
+    align-items: center;
+    color: #32b9cd;
+}
+.footer .navbar li{
+    margin-left: 40px;
 }
